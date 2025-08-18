@@ -54,16 +54,18 @@ def compare_json(a, b, key_weight=0.25, value_weight=0.75, alpha=1.):
 
     - **Numerical Values (int, float):**
       - Similarity is calculated using an exponential decay function based on the absolute difference:
-        \[
-        \text{Similarity} = e^{-\alpha \times |a - b|}
-        \]
+      \\[
+        \\text{Similarity} = e^{-\\alpha \\times |a - b|}
+      \\]
+
       - **alpha** controls the rate at which similarity decreases as the difference increases.
 
     - **Strings:**
       - Similarity is the proportion of matching characters at the same positions relative to the length of the longer string:
-        \[
-        \text{Similarity} = \frac{\text{Number of Matching Characters}}{\text{Length of Longer String}}
-        \]
+      \\[
+        \\text{Similarity} = \\frac{\\text{Number of Matching Characters}}{\\text{Length of Longer String}}
+      \\]
+
 
     - **Booleans:**
       - Similarity is 1 if both values are the same, 0 otherwise.
@@ -78,9 +80,10 @@ def compare_json(a, b, key_weight=0.25, value_weight=0.75, alpha=1.):
       - **Key Similarity:** Calculated as the ratio of shared keys to total unique keys.
       - **Value Similarity:** Recursively computed similarities of the values corresponding to shared keys.
       - **Combined Similarity:** Weighted sum of key similarity and value similarity:
-        \[
-        \text{Similarity} = (\text{key\_weight} \times \text{Key Similarity}) + (\text{value\_weight} \times \text{Value Similarity})
-        \]
+      \\[
+        \text{Similarity} = (\\text{key\\_weight} \\times \\text{Key Similarity}) + (\\text{value\\_weight} \\times \\text{Value Similarity})
+      \\]
+
 
     - **Lists:**
       - Elements are compared recursively up to the length of the shorter list.
@@ -209,7 +212,8 @@ def score(solution: pd.DataFrame, submission: pd.DataFrame, row_id_column_name: 
     '''
     Computes the average similarity score between two DataFrames containing JSON-like data.
 
-    This function compares corresponding JSON objects in the `solution` and `submission` DataFrames row by row and column by column. It calculates a similarity score for each pair of JSON objects and returns the overall average similarity score ranging from 0 to 1.
+    This function compares corresponding JSON objects in the `solution` and `submission` DataFrames row by row and column by column. 
+    It calculates a similarity score for each pair of JSON objects and returns the overall average similarity score ranging from 0 to 1.
 
     **Parameters:**
 
