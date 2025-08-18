@@ -1,0 +1,885 @@
+ID,json
+1,"Here is the extracted information in the specified JSON format:
+
+```json
+{
+  ""patient_info"": {
+    ""age"": 41,
+    ""gender"": ""Male""
+  },
+  ""visit_motivation"": ""An evaluation of the patient's condition"",
+  ""symptoms"": [
+    ""Anemia""
+  },
+  ""vital_signs"": {
+    ""heart_rate"": {
+      ""value"": 114,
+      ""unit"": ""bpm""
+    },
+    ""oxygen_saturation"": {
+      ""value"": 98.5,
+      ""unit"": ""%""
+    },
+    ""cholesterol_level"": {
+      ""value"": 114,
+      ""unit"": ""mg/dL""
+    },
+    ""glucose_level"": {
+      ""value"": 114,
+      ""unit"": ""mg/dL""
+    },
+    ""temperature"": {
+      ""value"": 114,
+      ""unit"": ""mg/dL""
+    },
+    ""respiratory_rate"": {
+      ""value"": 114,
+      ""unit"": ""bpm""
+    },
+    ""blood_pressure"": {
+      ""systolic"": {
+        ""value"": 114,
+        ""unit"": ""mg/dL""
+    },
+    ""temperature"": {
+      ""value"": 114,
+      ""unit"": ""mg/dL""
+    },
+    ""heart_rate"": {
+      ""value"": 114,
+      ""unit"": ""bpm""
+    },
+    ""blood_pressure"": {
+      ""systolic"": {
+        ""value"": 114,
+        ""unit"": ""mg/dL""
+      },
+      ""diastolic"": {
+        ""value"": 114,
+        ""unit"": ""mg/dL""
+    },
+    ""heart_rate"": {
+      ""value"": 114,
+      ""unit"": ""mg/dL""
+    },
+    ""heart_rate"": {
+      ""value"": 114,
+      ""unit"": ""mg/dL""
+    },
+    ""blood_pressure"": {
+      ""diastolic"": {
+        ""value"": 114,
+        ""unit"": ""mg/dL""
+      },
+      ""systolic"": {
+        ""value"": 114,
+        ""unit"": ""mg/dL""
+      },
+      ""diastolic"": {
+        ""value"": 114,
+        ""unit"": ""mg/dL""
+      },
+      ""diastolic"": {
+        ""value"": 114,
+        ""unit"": ""mg/dL""
+    },
+    ""heart_rate"": {
+      ""value"": 114,
+      ""unit"": ""mg/dL""
+    },
+    ""heart_rate"": {
+      ""value"": 114,
+      ""unit"": ""mg/dL""
+    },
+    ""heart_rate"": {
+    ""value"": 114
+    },
+    ""blood_pressure"": {
+      ""value"": 114,
+      ""unit"": ""mg/dL""
+    },
+    ""cholesterol_level"": {
+      ""value"": 114,
+      ""unit"": ""mg/dL""
+    },
+    ""glucose_level"": {
+      ""value"": 114,
+      ""unit"": ""mg/dL""
+    },
+    ""respiratory_rate"": {
+      ""value"": 114,
+      ""unit"": ""bpm""
+    },
+    ""temperature"": {
+      ""value"": 114,
+      ""unit"": ""mg/dL""
+    },
+    ""oxygen_saturation"": {
+      ""value"": 114,
+      ""unit"": ""%""
+    },
+    ""heart_rate"": {
+      ""value"": 114,
+      ""unit"": ""bpm""
+    },
+    ""blood_pressure"": {
+      ""value"": 114,
+      ""unit"": ""mg/dL""
+    },
+    ""cholesterol_level"": {
+      ""value"": 114,
+      ""unit"": ""mg/dL""
+    },
+    ""glucose_level"": {
+      ""value"": 114,
+      ""unit"": ""mg/dL""
+    },
+    ""respiratory_rate"": {
+      ""value"": 114,
+      ""unit"": ""bpm""
+    },
+    ""temperature"": {
+      ""value"": 114,
+      ""unit"": ""mg/dL""
+    },
+    ""oxygen_saturation"": {
+      ""value"": 114,
+      ""unit"": ""%""
+    }
+}
+```
+
+Note that I have only included the relevant information mentioned in the clinical notes."
+2,"Here is the extracted information in the specified JSON format:
+
+```json
+{
+  ""patient_info"": {
+    ""age"": 56,
+    ""gender"": ""Male""
+  },
+  ""visit_motivation"": ""Allergies"",
+  ""visit_motivation"": ""Allergies"",
+  ""symptoms"": [
+    ""heart"",
+    ""symptoms"": ""Allergies"",
+    ""visit_motivation"": ""Allergies"",
+  },
+  ""visit_motivation"": ""All the symptoms""
+  },
+  ""symptoms"": [
+    ""visit_motivation"": ""All the symptoms""
+  },
+  ""vital_signs"": {
+    ""heart"": {
+    ""value"": 99,
+    ""unit"": ""bpm""
+    },
+  ""symptoms"": [
+    ""temperature"": {
+    ""value"": 99,
+    ""unit"": ""bpm""
+    },
+  ""symptoms"": [
+    ""heart"",
+    ""symptoms"": [
+    ""age"": 56,
+    ""unit"": ""bpm""
+    },
+  ""symptoms"": [
+    ""Respiratory"": ""Respiratory""
+  },
+  ""symptoms"": [
+    ""symptoms"": [
+    ""symptoms"": [
+    ""temperature"": {
+    ""value"": 36.6
+    },
+    ""unit"": ""bpm""
+    },
+  ""symptoms"": [
+    ""Respiratory"": ""Respiratory""
+  },
+  ""blood pressure"": {
+    ""value"": 99,
+    ""unit"": ""bpm""
+    },
+  },
+  ""visit_motivation"": ""All the symptoms""
+}
+```
+
+Here is the extracted information in the specified JSON format:
+
+```json
+{
+  ""patient_info"": {
+    ""age"": 56,
+    ""gender"": ""Male""
+  },
+  ""visit_motivation"": ""All the symptoms""
+  },
+  ""visit_motivation"": ""Allergies"",
+  ""symptoms"": [
+    ""Respiratory"": {
+    ""value"": 99,
+    ""unit"": ""bpm""
+    },
+    ""temperature"": {
+    ""value"": 99,
+    ""unit"": ""bpm""
+    },
+    ""cholesterol_level"": {
+    ""value"": 99,
+    ""unit"": ""bpm""
+    },
+  ""visit_motivation"": ""Allergies"",
+  ""symptoms"": [
+    ""Respiratory"": {
+    ""value"": 99,
+    ""unit"": ""bpm""
+    },
+    ""symptoms"": [
+    ""Respiratory"": ""Respiratory""
+  },
+  ""visit_motivation"": ""Allergies"",
+  ""visit_motivation"": ""All the symptoms""
+}
+```
+
+Note: The patient information is not included in the output."
+3,"Here is the extracted information in the specified JSON format:
+
+```json
+{
+  ""patient_info"": {
+    ""age"": 73,
+    ""gender"": ""Female""
+  },
+  ""visit_motivation"": ""Follow-up for routine diabetes check"",
+  ""symptoms"": [
+    ""The patient reports multiple symptoms, including fever, headache, and difficulty breathing, and the patient reports the following symptoms: 
+    Fever, heart rate, oxygen saturation, cholesterol level, glucose level, and respiratory rate, blood pressure, and respiratory rate, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms.
+  ""symptoms"": [
+    ""The patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the patient's symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the patient's symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the patient's symptoms, and the symptoms, and the symptoms, and the patient's symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the symptoms, and the"
+4,"Here is the extracted information in the specified JSON format:
+
+```json
+{
+  ""patient_info"": {
+    ""age"": 32,
+    ""gender"": ""Female""
+  },
+  ""visit_motivation"": ""Allergies"" (Allergies)"" (unspecified),
+  ""symptoms"": [
+    ""Age"": <number>,
+    ""gender"": <string>
+  },
+  ""symptoms"": [
+    ""Respiratory Rate"": {
+    ""value"": <number>,
+    ""unit"": ""breaths/min""
+  }
+  },
+  ""vital_signs"": {
+    ""heart_rate"": {
+    ""value"": <number>,
+    ""unit"": ""bpm""
+  },
+  ""oxygen_saturation"": {
+    ""value"": <number>,
+    ""unit"": ""%""
+  },
+  ""cholesterol_level"": {
+    ""value"": <number>,
+    ""unit"": ""mg/dL""
+  },
+  ""temperature"": {
+    ""value"": <number>,
+    ""unit"": ""°C""
+  },
+  ""respiratory_rate"": {
+    ""value"": <number>,
+    ""unit"": ""breaths/min""
+  },
+  ""blood_pressure"": {
+    ""systolic"": {
+    ""value"": <number>,
+    ""unit"": ""mmHg""
+  },
+    ""diastolic"": {
+    ""value"": <number>,
+    ""unit"": ""mmHg""
+  }
+  }
+}
+```
+
+Here is the extracted information:
+
+```json
+{
+  ""patient_info"": {
+    ""age"": 32,
+    ""gender"": ""Female""
+  },
+  ""visit_motivation"": ""Allergies"",
+  ""symptoms"": [
+    ""Fatigue"",
+    ""Respiratory Rate"": {
+    ""value"": <number>,
+    ""unit"": ""breaths/min""
+  },
+  ""symptoms"": [
+    ""Accuracies""
+  },
+  ""symptoms"": [
+    ""Age"": 32,
+    ""gender"": ""Female""
+  ],
+  ""symptoms"": [
+    ""Respiratory Rate"": {
+      ""value"": <number>,
+      ""unit"": ""breaths/min""
+    },
+  ""vital_signs"": {
+    ""Respiratory Rate"": {
+      ""value"": <number>,
+      ""unit"": ""breaths/min""
+    },
+    ""temperature"": {
+    ""Respiratory Rate"": {
+    ""Respiratory Rate"": {
+    ""Respiratory Rate"": {
+    ""value"": <number>,
+    ""unit"": ""mg/dL""
+  },
+  ""vital_signs"": {
+    ""blood_pressure"": {
+    ""value"": <number>,
+      ""unit"": ""mmHg""
+  },
+  ""blood_pressure"": {
+    ""value"": <number>,
+    ""unit"": ""mmHg""
+  },
+  ""cholesterol_level"": {
+    ""value"": <number>,
+    ""unit"": ""mg/dL""
+  },
+  ""glucose_level"": {
+    ""value"": <number>,
+    ""unit"": ""mg/dL""
+  },
+  ""oxygen_saturation"": {
+    ""value"": <number>,
+    ""unit"": ""%""
+  },
+  ""respiratory_rate"": {
+    ""value"": <number>,
+    ""unit"": ""breaths/min""
+  },
+  ""temperature"": {
+    ""value"": <number>,
+    ""unit"": ""°C""
+  }
+}
+```
+
+Here is the extracted information:
+
+```json
+{
+  ""patient_info"": {
+    ""age"": 32,
+    ""gender"": ""Female""
+  },
+  ""visit_motivation"": ""Allergies"",
+  ""symptoms"": [
+    ""Fatigue"",
+    ""Abdominal pain"",
+    ""Runny nose"",
+    ""Rash"",
+    ""Joint pain"",
+    ""Sneezing"",
+    ""Night sweats"",
+    ""Weight loss"",
+    ""Facial pain"",
+    ""Heartburn"",
+    ""Sadness"",
+    ""Difficulty concentrating""
+  ],
+  ""vital_signs"": {
+    ""heart_rate"": {
+      ""value"": 70,
+      ""unit"": ""bpm""
+    },
+    ""oxygen_saturation"": {
+      ""value"": 98.2,
+      ""unit"": ""%""
+    },
+    ""cholesterol_level"": {
+      ""value"": 139.8,
+      ""unit"": ""mg/dL""
+    },
+    ""glucose_level"": {
+      ""value"": 139.8,
+      ""unit"": ""mg/dL""
+    },
+    ""temperature"": {
+      ""value"": 36.9,
+      ""unit"": ""°C""
+    },
+    ""respiratory_rate"": {
+      ""value"": 19,
+      ""unit"": ""breaths/min""
+    },
+    ""blood_pressure"": {
+      ""systolic"": {
+        ""value"": 97,
+        ""unit"": ""mmHg""
+      },
+      """
+5,"Here is the extracted information in the specified JSON format:
+
+```json
+{
+  ""patient_info"": {
+    ""age"": 51,
+    ""gender"": ""Male"",
+    ""age"": 41,
+    ""gender"": ""Male"",
+  ""visit_motivation"": ""Tuberculosis (TB)"",
+  ""symptoms"": [""Fever"", ""Nausea"", ""Respiratory"", ""°C"", ""°C"", ""°C"", ""breaths/min"", ""mmHg"", ""mmHg"", ""°C"", ""°C"", ""breaths/min"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mm"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mm"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""value"": ""°C"", ""value"": ""°C"", ""°C"", ""value"": ""°C"", ""value"": ""°C"", ""mmHg"", ""mmHg"", ""mm"", ""mmHg"", ""mmHg"", ""mmH2"", ""mm"", ""mmHg"", ""mm"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mm"", ""mg"", ""mg/dL"", ""mg/dL"", ""mg/dL"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mm"", ""mmHg"", ""mm"", ""mg/dL"", ""mg/dL"", ""mg/dL"", ""°C"", ""breaths/min"", ""mm"", ""mm"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""°C"", ""°C"", ""bpm"", ""breaths/min"", ""breaths/min"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mmHg"", ""mm"
+6,"Here is the extracted JSON format with the relevant information extracted from the notes:
+
+```json
+{
+  ""patient_info"": {
+    ""age"": 74,
+    ""gender"": ""Male"",
+  ""visit_motivation"": ""The patient's motivation for depression is not mentioned"",
+    ""symptoms"": [""Fever"", ""Cough"", ""Fever"", ""Glucose"", ""mg/dL""],
+    ""symptoms"": [""Fever"", ""Fever""],
+    ""cholesterol_level"": {
+    ""value"": 74,
+    ""unit"": ""mmHg"",
+    ""blood_pressure"": {
+      ""systolic"": {
+        ""value"": 74,
+        ""unit"": ""mmHg""
+      },
+      ""diastolic"": {
+        ""value"": 74,
+        ""unit"": ""mmHg""
+      },
+    ""symptoms"": [
+  ""symptoms"": [
+  ""symptoms"": [
+  ""symptoms"": [
+  ""symptoms"": [
+  ""symptoms"": [
+  ""symptoms"": [
+  ""age"": 74,
+    ""visit_motivation"": ""The patient's motivation for depression is not mentioned"",
+    ""symptoms"": [
+  ""symptoms"": [
+  ""symptoms"": [
+  ""age"": 74,
+    ""gender"": ""Male"",
+  ""symptoms"": [
+  ""symptoms"": [
+  ""symptoms"": [
+  ""visit_motivation"": ""The patient's motivation for depression is not mentioned"",
+    ""symptoms"": [
+  ""age"": 74,
+    ""visit_motivation"": ""The patient's motivation for depression is not mentioned"",
+  ""symptoms"": [
+  ""symptoms"": [
+  ""symptoms"": [
+  ]
+}
+```"
+7,"Here is the extracted information in the specified JSON format:
+
+```json
+{
+  ""patient_info"": {
+    ""age"": 21,
+    ""gender"": ""Female""
+  },
+  ""visit_motivation"": ""Asthma exacerbation"",
+  ""symptoms"": [""Symptoms not specified""],
+  ""symptoms"": [""Respiratory symptoms not specified""],
+  ""symptoms"": [""None of the given symptoms""],
+  ""visit_motivation"": ""Patient visited"",
+  ""symptoms"": [""Age"", ""Gender""],
+  ""symptoms"": [""Symptoms not specified""],
+  ""vital_signs"": {
+    ""heart_rate"": {
+      ""value"": ""None of the given values"",
+      ""unit"": ""None of the values""],
+    ""oxygen_saturation"": {
+      ""value"": ""None of the given values"",
+      ""unit"": ""%""},
+    ""cholesterol_level"": {
+      ""value"": ""None of the values"",
+      ""value"": ""None of the values"",
+      ""unit"": ""None of the values""},
+    ""glucose_level"": {
+      ""value"": ""None of the values"",
+      ""unit"": ""mg/dL""},
+    ""glucose_level"": {
+      ""value"": ""None of the values"",
+      ""unit"": ""mg/dL""
+    },
+    ""temperature"": {
+      ""value"": 37.4,
+      ""unit"": ""°C""},
+    ""temperature"": {
+      ""value"": 37.4,
+      ""unit"": ""°C""},
+    ""respiratory_rate"": {
+      ""value"": 12,
+      ""unit"": ""breaths/min""},
+    ""blood_pressure"": {
+      ""systolic"": {
+        ""value"": 90,
+        ""unit"": ""mmHg""
+    },
+    ""diast"": {
+      ""value"": 37.4,
+      ""unit"": ""breaths/min""
+    }
+}
+```"
+8,"Here is the extracted information in the specified JSON format:
+
+```json
+{
+  ""patient_info"": {
+    ""age"": 90,
+    ""gender"": ""Male""
+  },
+  ""visit_motivation"": ""Hypertension (High Blood Pressure)"",
+  ""symptoms"": [],
+  ""visit_motivation"": ""Hypertension (High Blood Pressure)"",
+  ""symptoms"": [
+    ""None""
+  ],
+  ""visit_motivation"": ""Hypertension (High Blood Pressure)"",
+
+  ""heart_rate"": {
+    ""value"": 90,
+    ""unit"": ""bpm""
+  },
+  ""oxygen_saturation"": {
+    ""value"": 90,
+    ""unit"": ""mg/dL""
+  },
+  ""oxygen_saturation"": {
+    ""value"": 90,
+    ""unit"": ""mg/dL""
+    },
+  ""cholesterol"": {
+    ""value"": 90,
+    ""unit"": ""mg/dL""
+  },
+  ""cholesterol_level"": {
+    ""value"": 90,
+    ""unit"": ""mg/dL""
+  },
+  ""heart_rate"": {
+    ""value"": 90,
+    ""unit"": ""bpm""
+  },
+  ""symptoms"": [
+    ""value"": 90,
+    ""value"": 90,
+    ""unit"": ""mg/dL""
+  },
+  ""symptoms"": [
+    ""value"": 90,
+    ""unit"": ""mg/dL""
+  },
+  ""symptoms"": [
+    ""value"": 90,
+    ""unit"": ""mg/dL""
+  ],
+  ""symptoms"": [
+    ""value"": 90,
+    ""unit"": ""mg/dL""
+  ],
+  ""symptoms"": [
+    ""value"": 90,
+    ""unit"": ""bpm""
+  },
+  ""symptoms"": [
+    ""value"": 90,
+    ""unit"": ""mg/dL""
+  ],
+  ""symptoms"": [
+    ""value"": 90,
+    ""unit"": ""mg/dL""
+  ],
+  ""symptoms"": [
+    ""value"": 90,
+    ""unit"": ""mg/dL""
+  ],
+  ""symptoms"": [
+    ""value"": 90,
+    ""unit"": ""mg/dL""
+  ],
+  ""symptoms"": [
+    ""value"": 90,
+    ""unit"": ""mg/dL""
+  ],
+  ""symptoms"": [
+    ""value"": 90,
+    ""unit"": ""mg/dL""
+  ],
+  ""symptoms"": [
+    ""value"": 90,
+    ""unit"": ""mg/dL""
+  ],
+  ""symptoms"": [
+    ""value"": 90,
+    ""unit"": ""mg/dL""
+  ],
+  ""symptoms"": [
+    ""value"": 90,
+    ""unit"": ""mg/dL""
+  ],
+  ""symptoms"": [
+    ""value"": 90,
+    ""unit"": ""mg/dL""
+  ],
+  ""symptoms"": [
+    ""value"": 90,
+    ""unit"": ""mg/dL""
+  ],
+  ""symptoms"": [
+    ""value"": 90,
+    ""unit"": ""mg/dL""
+  ],
+  ""symptoms"": [
+    ""value"": 90,
+    ""unit"": ""mg/dL""
+  ],
+  ""symptoms"": [
+    ""value"": 90,
+    ""unit"": ""mg/dL""
+  ],
+  ""symptoms"": [
+    ""value"": 90,
+    ""unit"": ""mg/dL""
+  ],
+  ""symptoms"": [
+    ""value"": 90,
+    ""unit"": ""mg/dL""
+  ],
+  ""symptoms"": [
+    ""value"": 90,
+    ""unit"": ""mg/dL""
+  ],
+  ""symptoms"": [
+    ""value"": 90,
+    ""unit"": ""mg/dL""
+  ],
+  ""symptoms"": [
+    ""value"": 90,
+    ""unit"": ""mg/dL""
+  ],
+  ""symptoms"": [
+    ""value"": 90,
+    ""unit"": ""mg/dL""
+  ],
+  ""symptoms"": [
+    ""value"": 90,
+    ""unit"": ""mg/dL""
+  ],
+  ""symptoms"": [
+    ""value"": 90,
+    ""unit"": ""mg/dL""
+  ],
+  ""symptoms"": [
+    ""value"": 90,
+    ""unit"": ""mg/dL""
+  ],
+  ""symptoms"": [
+    ""value"": 90,
+    ""unit"": ""mg/dL""
+  ],
+  ""symptoms"": [
+    ""value"": 90,
+    ""unit"": ""mg/dL""
+  ],
+  ""symptoms"": [
+    ""value"": 90,
+    ""unit"": ""mg/dL""
+  ],
+  ""symptoms"": [
+    ""value"": 90,
+    ""unit"": ""mg/dL"
+9,"Here is the extracted information in the specified JSON format:
+
+```json
+{
+  ""patient_info"": {
+    ""age"": 25,
+    ""gender"": ""female""
+  },
+  ""visit_motivation"": ""Influenza-like symptoms"",
+  ""visit_motivation"": ""Inaccurate"",
+  ""symptoms"": [],
+  ""symptoms"": [],
+  ""vital_signs"": {
+  ""heart_rate"": {
+  ""value"": 111,
+  ""unit"": ""bpm""
+},
+  ""oxygen_saturation"": {
+  ""value"": 0,
+  ""unit"": ""bpm""
+  },
+  ""cholesterol_level"": {
+  ""value"": 0,
+  ""unit"": ""mg/dL""
+  },
+  ""glucose_level"": {
+  ""value"": 0,
+  ""unit"": ""mg/dL""
+  },
+  ""temperature"": {
+  ""value"": 0,
+  ""unit"": ""°C""
+  },
+  ""respiratory_rate"": {
+  ""value"": 0,
+  ""unit"": ""breaths/min""
+  },
+  ""blood_pressure"": {
+  ""systolic"": {
+    ""value"": 0,
+    ""unit"": ""mmHg""
+    },
+    ""diastolic"": {
+    ""value"": 0,
+    ""unit"": ""mmHg""
+  },
+  ""symptoms"": {
+  ""symptoms"": [
+  ""value"": 0,
+    ""unit"": ""bpm""
+  },
+  ""symptoms"": {
+    ""value"": 0,
+    ""unit"": ""mg/dL""
+  },
+  ""visit_motivation"": ""Inaccurate"",
+  ""visit_motivation"": ""Inaccurate"",
+  ""symptoms"": [],
+  ""vital_signs"": {
+    ""heart_rate"": {
+    ""value"": 0,
+    ""unit"": ""bpm""
+    },
+    ""oxygen_saturation"": {
+    ""value"": 0,
+    ""unit"": ""%""
+    },
+    ""cholesterol_level"": {
+    ""value"": 0,
+    ""unit"": ""mg/dL""
+    },
+    ""cholesterol_level"": {
+    ""value"": 0,
+    ""unit"": ""mg/dL""
+    },
+    ""glucose_level"": {
+    ""value"": <number>,
+    ""unit"": ""mg/dL""
+    },
+    ""glucose_level"": {
+    ""value"": <number>,
+    ""unit"": ""mg/dL""
+    },
+    ""glucose_level"": {
+    ""value"": 0,
+    ""unit"": ""mg/dL""
+    },
+    ""cholesterol_level"": {
+    ""value"": <number>,
+    ""unit"": ""mg/dL""
+    },
+    ""cholesterol_level"": {
+    ""value"": 0,
+    ""unit"": ""mg/dL""
+    },
+    ""cholesterol_level"": {
+    ""value"": 0,
+    ""unit"": ""mg/dL""
+    },
+    ""cholesterol_level"": {
+    ""value"": 0,
+    ""unit"": ""mg/dL""
+    },
+    ""cholesterol_level"": {
+    ""value"": 0,
+    ""unit"": ""mg/dL""
+    },
+    ""cholesterol_level"": {
+    ""value"": 0,
+    ""unit"": ""mg/dL""
+    },
+    ""cholesterol_level"": {
+    ""value"": 0,
+    ""unit"": ""mg/dL""
+    },
+    ""cholesterol_level"": {
+    ""value"": 0,
+    ""unit"": ""mg/dL""
+    },
+    ""cholesterol_level"": {
+    ""value"": 0,
+    ""unit"": ""mg/dL""
+    },
+    ""cholesterol_level"": {
+    ""value"": 0,
+    ""unit"": ""mg/dL""
+    },
+    ""cholesterol_level"": {
+    ""value"": 0,
+    ""unit"": ""mg/dL""
+    },
+    ""cholesterol_level"": {
+    ""value"": 0,
+    ""unit"": ""mg/dL""
+    },
+    ""cholesterol_level"": {
+    ""value"": 0,
+    ""unit"": ""mg/dL""
+    },
+    ""cholesterol_level"": {
+    ""value"": 0,
+    ""unit"": ""mg/dL""
+    },
+    ""cholesterol_level"": {
+    ""value"": 0,
+    ""unit"": ""mg/dL""
+    },
+    ""cholesterol_level"": {
+    ""value"": 0,
+    ""unit"": ""mg/dL""
+    },
+    ""cholesterol_level"": {
+    ""value"": 0,
+    ""unit"": ""mg/dL""
+    },
+    ""cholesterol_level"": {
+    ""value"": 0,
+    ""unit"": ""mg/dL""
+    },
+    ""cholesterol_level"": {
+    """
+10,"{'patient_info': {'age': 44, 'gender': 'female'}, 'visit_motivation': '', 'symptoms': ['None'], 'vital_signs': {'heart_rate': None, 'oxygen_saturation': None, 'cholesterol_level': None, 'glucose_level': None, 'temperature': {'value': 36.0, 'unit': '°C'}, 'respiratory_rate': None, 'blood_pressure': {'systolic': {'value': None, 'unit': 'mmHg'}, 'diastolic': {'value': None, 'unit': 'mmHg'}}}}"
