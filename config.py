@@ -25,10 +25,10 @@ class LLMConfig:
 
     # Sampling parameters
     n_samples: int = 1
-    temperature: float = 0.8 # 0~2.0 for vllm, 0~1.0 for ollama
+    temperature: float = 0.2
     top_p: float = 0.9
     seed: int = 777
-    max_tokens: int = 2048
+    max_tokens: int = 4096
 
 
 @dataclass

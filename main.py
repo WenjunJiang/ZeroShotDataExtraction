@@ -1,6 +1,5 @@
 """
 Main Jupyter Notebook for Medical Notes Processing
-This can be copied into a Jupyter notebook (.ipynb file)
 """
 
 # %% [markdown]
@@ -21,7 +20,6 @@ warnings.filterwarnings('ignore')
 # Import our custom modules
 from config import LLMConfig, RetryConfig
 from parser import MedicalNotesParser
-from models import MedicalRecord
 from utils import (
     load_and_process_medical_notes,
     save_results,
@@ -32,13 +30,6 @@ from utils import (
     validate_batch_results
 )
 
-# Setup logging
-import logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
-)
-logger = logging.getLogger(__name__)
 
 # %% [markdown]
 # ## 2. Load Your Data
@@ -46,26 +37,20 @@ logger = logging.getLogger(__name__)
 # %%
 # Load your medical notes data
 # Replace with your actual data file
-train_sample_df = pd.read_csv('medical-note-extraction-h-2-o-gen-ai-world-ny/train.csv')
+train_df = pd.read_csv('medical-note-extraction-h-2-o-gen-ai-world-ny/train.csv')
 
 # Display basic information about the dataset
-print(f"Dataset shape: {train_sample_df.shape}")
-print(f"Columns: {train_sample_df.columns.tolist()}")
-print("\nFirst few rows:")
-train_sample_df.head()
+print(f"Dataset shape: {train_df.shape}")
+print(f"Columns: {train_df.columns.tolist()}")
+print(f"\nFirst few rows:{train_df.head(2)}" )
+train_sample_df = train_df.head(1000)
 
 # %% [markdown]
 # ## 3. Configure Settings
 
 # %%
 # Configure LLM settings
-llm_config = LLMConfig(
-    model_dir='/root/.cache/kagglehub/models/metaresearch/llama-3.2/transformers/3b-instruct/1',
-    temperature=0.2,
-    max_tokens=1024,
-    seed=777,
-    gpu_memory_utilization=0.80
-)
+llm_config = LLMConfig()
 
 # Configure retry settings
 retry_config = RetryConfig(
@@ -76,9 +61,6 @@ retry_config = RetryConfig(
 )
 
 print("Configuration loaded successfully")
-print(f"Model: {llm_config.model_dir}")
-print(f"Max retries: {retry_config.max_retries}")
-print(f"Temperature: {llm_config.temperature}")
 
 # %% [markdown]
 # ## 4. Process Medical Notes
@@ -99,23 +81,23 @@ results_df = load_and_process_medical_notes(
 
 # %%
 # Option 2: Use the parser directly
-parser = MedicalNotesParser(llm_config, retry_config)
+# parser = MedicalNotesParser(llm_config, retry_config)
 
-# Process all notes
-results_df = parser.parse_batch(
-    train_sample_df,
-    note_column='Note',
-    id_column='ID',
-    batch_size=10
-)
-
-# Or process a single note
-single_note = train_sample_df.iloc[0]['Note']
-single_result = parser.parse_single_note_with_retry(
-    single_note,
-    note_id='TEST_001'
-)
-print("Single note result:", single_result)
+# # Process all notes
+# results_df = parser.parse_batch(
+#     train_sample_df,
+#     note_column='Note',
+#     id_column='ID',
+#     batch_size=10
+# )
+#
+# # Or process a single note
+# single_note = train_sample_df.iloc[0]['Note']
+# single_result = parser.parse_single_note_with_retry(
+#     single_note,
+#     note_id='TEST_001'
+# )
+# print("Single note result:", single_result)
 
 # %% [markdown]
 # ## 5. Analyze Results
@@ -234,54 +216,59 @@ if len(successful_df) > 0:
 
     print(f"Exported {len(json_records)} records to medical_records.json")
 
+
+
+
+
+
 # %% [markdown]
 # ## 10. Advanced: Custom Validation Example
 
 # %%
 # Example of using the models directly for validation
-from models import OutputSchema, PatientInfo, VitalSigns, HeartRate, Temperature
-
-# Create a medical record manually
-try:
-    test_record = MedicalRecord(
-        patient_info=PatientInfo(
-            age=45,
-            gender="male"
-        ),
-        visit_motivation="Routine checkup",
-        symptoms=["headache", "fatigue"],
-        vital_signs=VitalSigns(
-            heart_rate=VitalValue(value=72, unit="bpm"),
-            temperature=VitalValue(value=37.2, unit="°C")
-        )
-    )
-    print("✅ Valid medical record created:")
-    print(test_record.dict(exclude_none=True))
-except Exception as e:
-    print(f"❌ Validation error: {e}")
+# from models import OutputSchema, PatientInfo, VitalSigns, HeartRate, Temperature
+#
+# # Create a medical record manually
+# try:
+#     test_record = MedicalRecord(
+#         patient_info=PatientInfo(
+#             age=45,
+#             gender="male"
+#         ),
+#         visit_motivation="Routine checkup",
+#         symptoms=["headache", "fatigue"],
+#         vital_signs=VitalSigns(
+#             heart_rate=VitalValue(value=72, unit="bpm"),
+#             temperature=VitalValue(value=37.2, unit="°C")
+#         )
+#     )
+#     print("✅ Valid medical record created:")
+#     print(test_record.dict(exclude_none=True))
+# except Exception as e:
+#     print(f"❌ Validation error: {e}")
 
 # %% [markdown]
 # ## 11. Batch Processing with Progress Monitoring
 
 # %%
 # For large datasets, process with progress monitoring
-def process_with_progress(df, chunk_size=5):
-    """Process dataframe in chunks with progress updates"""
-    from tqdm.notebook import tqdm
-
-    parser = MedicalNotesParser(llm_config, retry_config)
-    all_results = []
-
-    for i in tqdm(range(0, len(df), chunk_size), desc="Processing batches"):
-        chunk = df.iloc[i:i+chunk_size]
-        chunk_results = parser.parse_batch(
-            chunk,
-            note_column='Note',
-            id_column='ID'
-        )
-        all_results.append(chunk_results)
-
-    return pd.concat(all_results, ignore_index=True)
+# def process_with_progress(df, chunk_size=5):
+#     """Process dataframe in chunks with progress updates"""
+#     from tqdm.notebook import tqdm
+#
+#     parser = MedicalNotesParser(llm_config, retry_config)
+#     all_results = []
+#
+#     for i in tqdm(range(0, len(df), chunk_size), desc="Processing batches"):
+#         chunk = df.iloc[i:i+chunk_size]
+#         chunk_results = parser.parse_batch(
+#             chunk,
+#             note_column='Note',
+#             id_column='ID'
+#         )
+#         all_results.append(chunk_results)
+#
+#     return pd.concat(all_results, ignore_index=True)
 
 # Uncomment to use with progress bar
 # results_with_progress = process_with_progress(train_sample_df, chunk_size=5)

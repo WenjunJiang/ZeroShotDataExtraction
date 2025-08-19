@@ -12,55 +12,58 @@ class PromptManager:
 Do not include any values that are not mentioned in the notes.
 Ensure all numeric values are properly formatted as numbers, not strings.
 Only include fields that have actual data from the notes.
-For gender field, use only: "Male", "Female", "Other", or "Unknown"."""
+For gender field, use only: "Male", "Female", "Other", or "Unknown".
+For symptoms field, every word is written using lowercase letters, and each symptom name which consisted of multiple words are connected by underscores. For example: "symptoms": ["fever", "cough", "sore_throat", "chest_pain", "diarrhea", "runny_nose", "rash", "sneezing", "loss_of_taste_smell", "frequent_urination", "night_sweats", "weight_loss", "facial_pain", "pale_skin"]
+For visit_motivation field, only capture the disease name and capitalize every word. For example: "Chief Complaint: Diabetes" is extracted as "Diabetes".  And "Evaluation of Influenza (Flu)" is extracted as "Influenza (Flu)".
+visit_motivation is not equal to symptom unless explicitly listed as a symptom.
+"""
 
     PROMPT_TEMPLATE = """
 For each entry:
 - Accurately identify and extract patient data, visit motivation, symptoms, and vital signs.
 - Only include keys that have corresponding information in the notes, omitting any keys that are not mentioned.
 - Ensure all numeric values are numbers, not strings.
-- For gender field, use only: "Male", "Female", "Other", or "Unknown"
 - Follow this exact JSON structure:
 ```json
 {
   "patient_info": {
-    "age": <number>,
+    "age": <int>,
     "gender": <string: "Male", "Female", "Other", or "Unknown">
   },
   "visit_motivation": "<string>",
   "symptoms": ["<string>"],
   "vital_signs": {
     "heart_rate": {
-      "value": <number>,
+      "value": <int>,
       "unit": "bpm"
     },
     "oxygen_saturation": {
-      "value": <number>,
+      "value": <float>,
       "unit": "%"
     },
     "cholesterol_level": {
-      "value": <number>,
+      "value": <float>,
       "unit": "mg/dL"
     },
     "glucose_level": {
-      "value": <number>,
+      "value": <float>,
       "unit": "mg/dL"
     },
     "temperature": {
-      "value": <number>,
+      "value": <float>,
       "unit": "°C"
     },
     "respiratory_rate": {
-      "value": <number>,
+      "value": <int>,
       "unit": "breaths/min"
     },
     "blood_pressure": {
       "systolic": {
-        "value": <number>,
+        "value": <int>,
         "unit": "mmHg"
       },
       "diastolic": {
-        "value": <number>,
+        "value": <int>,
         "unit": "mmHg"
       }
     }

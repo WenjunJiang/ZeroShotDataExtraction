@@ -8,7 +8,7 @@ import logging
 from typing import Dict, Any
 from pydantic import ValidationError
 
-from models import OutputSchema, MedicalRecord
+from models import OutputSchema
 
 logger = logging.getLogger(__name__)
 

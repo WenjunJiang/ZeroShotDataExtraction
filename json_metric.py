@@ -258,6 +258,10 @@ def score(solution: pd.DataFrame, submission: pd.DataFrame, row_id_column_name: 
             sub = to_json(sub)
             sol = to_json(sol)
             score = compare_json(sub, sol)
+            if score < 0.90:
+                print('score < 0.90')
+                print('sol:', sol)
+                print("sub:", sub)
             res += float(score)
         res = res / len(solution)
         total += res

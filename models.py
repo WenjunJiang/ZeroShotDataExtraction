@@ -6,44 +6,45 @@ from typing import Optional, List, Literal, Annotated
 from pydantic import BaseModel, Field, ConfigDict, StringConstraints
 
 # Reusable types
-Number = Annotated[float, Field(ge=0, description="Non-negative numeric value.")]
+NumberInt = Annotated[int, Field(ge=0, description="Non-negative numeric value.")]
+NumberFloat = Annotated[float, Field(ge=0, description="Non-negative numeric value.")]
 NonEmptyStr = Annotated[str, StringConstraints(min_length=1, strip_whitespace=True)]
 
 # --- Leaf measurement types (required *within* the object if the object is present) ----
 
 class HeartRate(BaseModel):
     model_config = ConfigDict(extra="forbid", strict=True)
-    value: Number = Field(..., description="Heart beats per minute.")
+    value: NumberInt = Field(..., description="Heart beats per minute.")
     unit: Literal["bpm"] = Field(..., description='Unit; must be exactly "bpm".')
 
 class OxygenSaturation(BaseModel):
     model_config = ConfigDict(extra="forbid", strict=True)
-    value: Number = Field(..., description="Peripheral capillary oxygen saturation.")
+    value: NumberFloat = Field(..., description="Peripheral capillary oxygen saturation.")
     unit: Literal["%"] = Field(..., description='Unit; must be exactly "%".')
 
 class Cholesterol(BaseModel):
     model_config = ConfigDict(extra="forbid", strict=True)
-    value: Number = Field(..., description="Total cholesterol measurement.")
+    value: NumberFloat = Field(..., description="Total cholesterol measurement.")
     unit: Literal["mg/dL"] = Field(..., description='Unit; must be exactly "mg/dL".')
 
 class Glucose(BaseModel):
     model_config = ConfigDict(extra="forbid", strict=True)
-    value: Number = Field(..., description="Blood glucose measurement.")
+    value: NumberFloat = Field(..., description="Blood glucose measurement.")
     unit: Literal["mg/dL"] = Field(..., description='Unit; must be exactly "mg/dL".')
 
 class Temperature(BaseModel):
     model_config = ConfigDict(extra="forbid", strict=True)
-    value: Number = Field(..., description="Body temperature in Celsius.")
+    value: NumberFloat = Field(..., description="Body temperature in Celsius.")
     unit: Literal["°C"] = Field(..., description='Unit; must be exactly "°C".')
 
 class RespiratoryRate(BaseModel):
     model_config = ConfigDict(extra="forbid", strict=True)
-    value: Number = Field(..., description="Breaths per minute.")
+    value: NumberInt = Field(..., description="Breaths per minute.")
     unit: Literal["breaths/min"] = Field(..., description='Unit; must be exactly "breaths/min".')
 
 class Pressure(BaseModel):
     model_config = ConfigDict(extra="forbid", strict=True)
-    value: Number = Field(..., description="Blood pressure value in millimeters of mercury.")
+    value: NumberInt = Field(..., description="Blood pressure value in millimeters of mercury.")
     unit: Literal["mmHg"] = Field(..., description='Unit; must be exactly "mmHg".')
 
 class BloodPressure(BaseModel):
